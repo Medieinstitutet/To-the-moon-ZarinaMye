@@ -31,15 +31,14 @@
     outline: 3px solid blue;
 }
 
-@media screen and (min-widht: 1024px) {
+@media screen and (min-widht: 800px) {
     .full-page {
         display: flex;
-        gap: 100px;
-    }
-    
-    .brown, .grey {
-        width: 50%;
+        gap: 10px;
     }
 
-    
+    .brown, .grey {
+         width: 50%;
+    }
+
 }
