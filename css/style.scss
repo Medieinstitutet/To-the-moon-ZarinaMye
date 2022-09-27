@@ -11,8 +11,17 @@
     outline: 3px solid grey;
 }
 
-.green {
-    outline: 3px solid green;
+.space-ventures {
+    h2 {
+        span:first-of-type {
+            display: block
+        }
+
+        span:nth-of-type(2) {
+            color: green;
+        }
+
+    }
 }
 
 .purple {
@@ -31,14 +40,19 @@
     outline: 3px solid blue;
 }
 
-@media screen and (min-widht: 800px) {
+/*------------------------------------------------*/
+/*-----------------DESKTOPP-----------------------*/
+/*------------------------------------------------*/
+@media screen and (min-widht: 1024px) {
     .full-page {
         display: flex;
-        gap: 10px;
+        flex-direction: row;
+        gap: 100px;
     }
 
     .brown, .grey {
          width: 50%;
     }
+
 
 }
