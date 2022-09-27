@@ -18,7 +18,8 @@
         }
 
         span:nth-of-type(2) {
-            color: green;
+            position: relative;
+            top: -20px;
         }
 
     }
@@ -43,16 +44,16 @@
 /*------------------------------------------------*/
 /*-----------------DESKTOPP-----------------------*/
 /*------------------------------------------------*/
-@media screen and (min-widht: 1024px) {
+@media screen and (min-width: 1024px) {
     .full-page {
         display: flex;
-        flex-direction: row;
         gap: 100px;
     }
 
     .brown, .grey {
          width: 50%;
     }
+
 
 
 }
