@@ -14,14 +14,38 @@
 .space-ventures {
     h2 {
         span:first-of-type {
-            display: block
+            position: relative;
+            display: block;
+            z-index: 1;
+           
         }
 
         span:nth-of-type(2) {
             position: relative;
             top: -20px;
+            left: 10px;
+            z-index: 0;
+            color: green;
         }
+    }
+}
 
+blockquote {
+    margin: 20px;
+    padding: 0;
+    position: relative;
+    &::before, &::after {
+        content: "";
+        display: block;
+        position: absolute;
+    }
+    &::before {
+        top: -5px;
+        left: -20px;
+    }
+    &::after {
+        bottom: -5px;
+        right: -20px;
     }
 }
 
@@ -44,7 +68,7 @@
 /*------------------------------------------------*/
 /*-----------------DESKTOPP-----------------------*/
 /*------------------------------------------------*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 800px) {
     .full-page {
         display: flex;
         gap: 100px;
