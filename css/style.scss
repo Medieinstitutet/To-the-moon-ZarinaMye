@@ -38,6 +38,8 @@ blockquote {
         content: "";
         display: block;
         position: absolute;
+        display: inline;
+        font-size: 3rem;
     }
     &::before {
         top: -5px;
@@ -47,6 +49,10 @@ blockquote {
         bottom: -5px;
         right: -20px;
     }
+}
+
+.gradient-quote {
+    display: none;
 }
 
 .purple {
@@ -73,9 +79,11 @@ blockquote {
         display: flex;
         gap: 100px;
     }
-
     .brown, .grey {
          width: 50%;
+    }
+    .gradient-quote {
+        display: block;
     }
 
 
