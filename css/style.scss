@@ -41,7 +41,7 @@ blockquote {
     padding: 0;
     position: relative;
     &::before, &::after {
-        content: "";
+        content: "\2033";
         display: block;
         position: absolute;
         display: inline;
