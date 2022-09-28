@@ -123,6 +123,24 @@ blockquote {
         display: flex;
         gap: 100px;
     }
+    .astronaut .heading-box {
+        width: 13rem;
+    }
+
+    .astronaut .heading-box .link {
+        text-align: right;
+    }
+
+    .astronaut .heading-box .link span {
+        position: relative;
+        left: 0px;
+        transition: left 1s cubic-bezier(0.65, 0, 0.35, 1);
+    }
+
+    .astronaut .heading-box .link:hover span {
+        left: 10px; 
+    }
+    
     .brown, .grey {
          width: 50%;
     }
