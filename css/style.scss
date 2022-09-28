@@ -15,6 +15,12 @@
 /*------------------------------------------------*/
 /*-----------------ASTRONAUT----------------------*/
 /*------------------------------------------------*/
+.page-header {
+    border: 1px solid red;
+    position: absolute;
+    width: 100vw;
+}
+
 .astronaut .heading-box {
     border: 3.5px solid black;
     width: 10rem;
@@ -107,6 +113,9 @@ blockquote {
 /*------------------------------------------------*/
 /*----------------MOBILE--------------------------*/
 /*------------------------------------------------*/
+
+
+
 .gradient-quote {
     display: none;
 }
@@ -134,7 +143,7 @@ blockquote {
     .astronaut .heading-box .link span {
         position: relative;
         left: 0px;
-        transition: left 1s cubic-bezier(0.65, 0, 0.35, 1);
+        transition: left 0.4s cubic-bezier(0.65, 0, 0.35, 1);
     }
 
     .astronaut .heading-box .link:hover span {
