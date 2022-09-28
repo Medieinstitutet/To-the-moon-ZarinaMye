@@ -16,9 +16,13 @@
 /*-----------------ASTRONAUT----------------------*/
 /*------------------------------------------------*/
 .page-header {
-    border: 1px solid red;
+    border: 2px solid red;
     position: absolute;
-    width: 100vw;
+    padding: 10px;
+    top: 10px;
+    left: 40px;
+    right: 40px;
+    
 }
 
 .astronaut .heading-box {
