@@ -19,7 +19,6 @@
     background-image: url(../img/astronaut.jpg);
     background-size: cover;
     background-position: 50% 50%;
-
 }
 
 .page-header {
@@ -29,30 +28,30 @@
     top: 10px;
     left: 40px;
     right: 40px;
-    
 }
 
 .astronaut .heading-box {
     border: 3.5px solid black;
-    width: 10rem;
+    width: 7rem;
     background-color: rgba(255, 255, 255, 0.7);
     position: absolute;
-    top: 80px;
-    left: 40px;
-    padding: 20px;
+    top: 50px;
+    left: 30px;
+    padding: 5px;
     font-family: 'Rubik', sans-serif;
 }
 
 .astronaut .heading-box .text {
     text-align: center;
     text-transform: uppercase;
-    font-size: 3rem;
-    font-weight: 500;
-    margin-bottom: 30px;
-
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .astronaut .heading-box .link {
+    font-size: 0.65rem;
+    font-weight: 400;
     
 }
 
