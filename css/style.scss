@@ -23,8 +23,8 @@
 
 button {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 15px;
+    right: 15px;
     width: 35px;
     height: 35px;
     background: transparent;
@@ -35,8 +35,8 @@ button {
 
 button span {
     display: block;
-    width: 25px;
-    height: 3px;
+    width: 27px;
+    height: 4px;
     background-color: black;
     border-radius: 6px;
     margin-bottom: 4px;
@@ -44,13 +44,18 @@ button span {
 
 input {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 15px;
+    right: 15px;
     z-index: 3;
     width: 35px;
     height: 35px;
     opacity: 0;
 }
+
+input:hover + .menu button span:nth-child(2) {
+    right: 5px;
+}
+/*-------?---------*/
 
 button span:nth-child(2) {
     position: relative;
@@ -58,15 +63,11 @@ button span:nth-child(2) {
     transition: left 0.3s ease-in-out;
 }
 
-button:hover span:nth-child(2) {
-    right: -15px;
-}
-
 nav {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: aqua;
+    background-color: rgb(255, 255, 255, 0.8);
     z-index: 2;
     width: 100vw;
     height: 100vh;
@@ -91,14 +92,15 @@ ul {
     justify-content: space-evenly;
     text-align: center;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 700;
+    text-shadow: 0px 1.5px rgba(184, 179, 179, 0.994);
 }
 
 .astronaut .heading-box {
-    border: 3.5px solid black;
+    border: 2.5px solid black;
     width: 7rem;
-    background-color: rgb(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.741);
     position: absolute;
     top: 45px;
     left: 30px;
@@ -209,7 +211,25 @@ blockquote {
 
     ul {
         font-size: 2rem;
+        li:hover {
+            text-decoration: 6px underline rgb(209, 0, 161);
+            }
+        
+            
+    /*--------------?-----------------*/
+        .underline {
+            border-radius: 2px;
+            text-shadow{
+                visibility: hidden;
+            }
+        
+        }
+        
+
     }
+        
+
+    
     .astronaut .heading-box {
         width: 13rem;
     }
@@ -249,3 +269,4 @@ blockquote {
     }
 
 }
+
