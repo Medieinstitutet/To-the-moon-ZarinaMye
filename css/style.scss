@@ -24,16 +24,35 @@
 .page-header {
     border: 2px solid red;
     position: absolute;
-    padding: 10px;
     top: 10px;
     left: 40px;
     right: 40px;
 }
 
+button {
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    border: 0;
+}
+
+button span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 6px;
+    margin-bottom: 4px;
+}
+
+input:checked + button {
+    border: 3px solid red;
+}
+
 .astronaut .heading-box {
     border: 3.5px solid black;
     width: 7rem;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgb (255, 255, 255, 0.7);
     position: absolute;
     top: 45px;
     left: 30px;
