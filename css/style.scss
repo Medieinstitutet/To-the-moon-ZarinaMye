@@ -174,14 +174,24 @@ ul {
             position: relative;
             display: block;
             z-index: 1;
+            color: white;
+            font-family: 'Rubik', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            top: 20px;
+            left: 25px;
         }
 
         span:nth-of-type(2) {
             position: relative;
-            top: -20px;
-            left: 10px;
             z-index: 0;
-            color: green;
+            color: white;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            top: -15px;
+            left: 60px;
+            opacity: 0.6;
         }
     }
 }
@@ -293,6 +303,8 @@ blockquote {
     .brown, .grey {
          width: 50%;
     }
+
+    
     .gradient-quote {
         display: block;
         background: #CF273E;
