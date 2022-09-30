@@ -154,17 +154,13 @@ ul {
 /*------------------------------------------------*/
 /*------------------PAGE.2: STORY------------------*/
 /*------------------------------------------------*/
-.story {
-    background-image: url(../img/space.jpg);
-    background-size: cover;
-}
-
-.brown {
+.part-1 {
     outline: 3px solid brown;
 }
 
-.grey {
-    outline: 3px solid grey;
+.story {
+    background-image: url(../img/space.jpg);
+    background-size: cover;
 }
 
 .space-ventures {
@@ -203,12 +199,14 @@ ul {
     padding-right: 10px;
     font-size: 0.45rem;
     line-height: 12px;
+    margin-top: -15px;
     h3 {
         font-size: 0.9rem;
     }
 }
 
 blockquote {
+    outline: 3px solid yellow;
     margin: 20px;
     padding-left: 20px;
     padding-right: 10px;
@@ -238,11 +236,11 @@ blockquote {
     }
 }
 
-.yellow {
-    outline: 3px solid yellow;
+.part-2 {
+    outline: 3px solid grey;
 }
 
-.red {
+.gradient-quote {
     outline: 3px solid red;
 }
 
@@ -322,12 +320,17 @@ blockquote {
             }
         }          
     }
-    
-    .brown, .grey {
+   /*------------------PAGE.2 STORY---------------*/ 
+   .story {
+      background-image: url(../img/space_rot.jpg);
+      background-size: cover;
+      background-position: 100;
+    }
+
+   .part-1, .part-2 {
          width: 50%;
     }
 
-    
     .gradient-quote {
         display: block;
         background: #CF273E;
@@ -337,18 +340,13 @@ blockquote {
         font-size: 2rem;
         text-align: center;
     }
+
     .major-tom {
         display: block;
         width: 100px;
         height: auto;
         float: right;
         transform: rotate(3deg);
-    }
-
-    .story {
-        background-image: url(../img/space_rot.jpg);
-        background-size: cover;
-        background-position: 100;
     }
 }
 
