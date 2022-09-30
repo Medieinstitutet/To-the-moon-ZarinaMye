@@ -155,7 +155,7 @@ ul {
 /*------------------PAGE.2: STORY------------------*/
 /*------------------------------------------------*/
 .story {
-    background-image: url(../img/space_up_d.jpg);
+    background-image: url(../img/space.jpg);
     background-size: cover;
 }
 
@@ -210,22 +210,31 @@ ul {
 
 blockquote {
     margin: 20px;
-    padding: 0;
+    padding-left: 20px;
+    padding-right: 10px;
     position: relative;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
+    font-size: 0.7rem;
+    line-height: 15px;
+    z-index: 2;
     &::before, &::after {
         content: "\2033";
         display: block;
         position: absolute;
         display: inline;
         font-size: 3rem;
+        opacity: 0.7;
+        z-index: 1;
     }
     &::before {
-        top: -5px;
-        left: -20px;
+        top: 5px;
+        left: 8px;
     }
     &::after {
-        bottom: -5px;
-        right: -20px;
+        bottom: -8px;
+        right: 50px;
     }
 }
 
@@ -237,7 +246,7 @@ blockquote {
     outline: 3px solid red;
 }
 
-.blue-clearfix {
+.clearfix {
     outline: 3px solid blue;
     color: white;
     font-family: 'Rubik', sans-serif;
@@ -337,7 +346,7 @@ blockquote {
     }
 
     .story {
-        background-image: url(../img/space_rot_d.jpg);
+        background-image: url(../img/space_rot.jpg);
         background-size: cover;
         background-position: 100;
     }
