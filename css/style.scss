@@ -60,7 +60,7 @@ input {
 input:hover + .menu button span:nth-child(2) {
     right: 5px;
 }
-/*-------?-inget hover--------*/
+/*-------?-inget hover-?-------*/
 
 button span:nth-child(2) {
     position: relative;
@@ -153,8 +153,14 @@ ul {
 }
 
 /*------------------------------------------------*/
-/*------------------PAGE.2: TEXT------------------*/
+/*------------------PAGE.2: STORY------------------*/
 /*------------------------------------------------*/
+.story {
+    background-image: url(../img/space_up.jpg);
+    background-size: cover;
+   
+}
+
 .brown {
     outline: 3px solid brown;
 }
@@ -244,7 +250,8 @@ blockquote {
             text-decoration: 6px underline rgb(209, 0, 161);
             }
             
-    /*--------------?---radius o shadow------------*/
+    /*--------------?---radius o shadow--?----------*/
+    // /----------underline vs boder-bottom---------*/
         .border-bottom {
             
             border-radius: 20px;
@@ -304,5 +311,10 @@ blockquote {
         transform: rotate(3deg);
     }
 
+    .story {
+        background-image: url(../img/space_rot.jpg);
+        background-size: cover;
+    
+    }
 }
 
