@@ -156,9 +156,8 @@ ul {
 /*------------------PAGE.2: STORY------------------*/
 /*------------------------------------------------*/
 .story {
-    background-image: url(../img/space_up.jpg);
+    background-image: url(../img/space_up_d.jpg);
     background-size: cover;
-   
 }
 
 .brown {
@@ -312,9 +311,9 @@ blockquote {
     }
 
     .story {
-        background-image: url(../img/space_rot.jpg);
+        background-image: url(../img/space_rot_d.jpg);
         background-size: cover;
-    
+        background-position: 100;
     }
 }
 
