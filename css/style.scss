@@ -1,3 +1,5 @@
+/*----imp normalize--blir fel?---allt orange?-----*/
+
 .clearfix::after {
     content: "";
     clear: both;
@@ -13,7 +15,7 @@
 }
 
 /*------------------------------------------------*/
-/*-----------------ASTRONAUT----------------------*/
+/*-----------------PAGE.1: ASTRONAUT--------------*/
 /*------------------------------------------------*/
 .astronaut{
     background-image: url(../img/astronaut.jpg);
@@ -21,6 +23,9 @@
     background-position: 50% 50%;
 }
 
+/*------------------------------------------------*/
+/*-----------------MENU---------------------------*/
+/*------------------------------------------------*/
 button {
     position: fixed;
     top: 15px;
@@ -55,7 +60,7 @@ input {
 input:hover + .menu button span:nth-child(2) {
     right: 5px;
 }
-/*-------?---------*/
+/*-------?-inget hover--------*/
 
 button span:nth-child(2) {
     position: relative;
@@ -63,6 +68,9 @@ button span:nth-child(2) {
     transition: left 0.3s ease-in-out;
 }
 
+/*------------------------------------------------*/
+/*-----------------OPEN MENU----------------------*/
+/*------------------------------------------------*/
 nav {
     position: fixed;
     top: 0;
@@ -97,6 +105,9 @@ ul {
     text-shadow: 0px 1.5px rgba(184, 179, 179, 0.994);
 }
 
+/*------------------------------------------------*/
+/*------------------ASIDE-------------------------*/
+/*------------------------------------------------*/
 .astronaut .heading-box {
     border: 2.5px solid black;
     width: 5.2rem;
@@ -124,7 +135,25 @@ ul {
 }
 
 /*------------------------------------------------*/
-/*--------------------TEXT------------------------*/
+/*------------------FOOTER------------------------*/
+/*------------------------------------------------*/
+.astronaut .arrow {
+    position: absolute;
+    width: 100vw;
+    height: 50px;
+    z-index: 5;
+    margin-bottom: 1px;
+    margin-top: 87vh;
+    span {
+        position: relative;
+        left: 49vw;
+        font-size: 2rem;
+        color: rgb(255, 255, 255, 1);
+    }
+}
+
+/*------------------------------------------------*/
+/*------------------PAGE.2: TEXT------------------*/
 /*------------------------------------------------*/
 .brown {
     outline: 3px solid brown;
@@ -214,41 +243,45 @@ blockquote {
         li:hover {
             text-decoration: 6px underline rgb(209, 0, 161);
             }
-        
             
-    /*--------------?-----------------*/
-        .underline {
-            border-radius: 2px;
+    /*--------------?---radius o shadow------------*/
+        .border-bottom {
+            
+            border-radius: 20px;
             text-shadow{
                 visibility: hidden;
             }
         }
     }
             
-    .astronaut .heading-box {
-        width: 12rem;
-    }
+    .astronaut {
+        .heading-box {
+          width: 12rem;
+      
+          .text {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            margin-top: 25px;
+          }
+      
+          .link {
+            text-align: right;
+            font-size: 0.6rem;
+            margin-bottom: 5px;
+            span {
+              position: relative;
+              left: 0;
+              transition: left 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+              &:hover { left: 10px; }
+            }
+          }
+        }
 
-    .astronaut .heading-box .text {
-        font-size: 3rem;
-        margin-bottom: 30px;
-        margin-top: 25px;
-    }
-
-    .astronaut .heading-box .link {
-        text-align: right;
-        font-size: 0.6rem;
-        margin-bottom: 5px;
-    }
-
-    .astronaut .heading-box .link span {
-        position: relative;
-        left: 0px;
-        transition: left 0.4s cubic-bezier(0.65, 0, 0.35, 1);
-    }
-
-    .astronaut .heading-box .link:hover span {
-        left: 10px; 
+        .arrow {
+            span {
+                visibility: hidden; 
+            }
+        }          
     }
     
     .brown, .grey {
