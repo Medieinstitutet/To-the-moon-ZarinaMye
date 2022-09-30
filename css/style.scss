@@ -58,7 +58,7 @@ input {
 }
 
 input:hover + .menu button span:nth-child(2) {
-    right: 5px;
+    right: -5px;
 }
 /*-------?-inget hover-?-------*/
 
@@ -195,6 +195,19 @@ ul {
     }
 }
 
+.ground {
+    outline: 3px solid purple;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: 0.45rem;
+    line-height: 12px;
+    h3 {
+        font-size: 0.9rem;
+    }
+}
+
 blockquote {
     margin: 20px;
     padding: 0;
@@ -216,10 +229,6 @@ blockquote {
     }
 }
 
-.purple {
-    outline: 3px solid purple;
-}
-
 .yellow {
     outline: 3px solid yellow;
 }
@@ -228,8 +237,14 @@ blockquote {
     outline: 3px solid red;
 }
 
-.blue {
+.blue-clearfix {
     outline: 3px solid blue;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.45rem;
+    padding-left: 20px;
+    padding-right: 10px;
+    line-height: 12px;
 }
 
 /*------------------------------------------------*/
