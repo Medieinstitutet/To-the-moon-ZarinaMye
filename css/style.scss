@@ -296,20 +296,24 @@ footer {
     z-index: 6;
     flex: auto;
     span:nth-of-type(1) {
-        font-size: 0.5rem;
         color: rgb(209, 0, 161);
         font-weight: 200;
-        
+        font-size: 8px;
+        animation: glow;
+        text-shadow: 0 0 0.3px #fff, 0 0 0.4px #e60073, 0 0 0.5px #e60073, 0 0 0.6px #e60073, 0 0 0.7px #e60073, 0 0 0.8px #e60073;
     }
-    
+
     span:nth-of-type(2) {
         font-size: 0.6rem;
         font-weight: 700;
         color: white;
         background-color: rgb(20, 20, 137);
         padding: 5px;
+        &:hover {
+            animation: glow;
+            text-shadow: 0 0 0.5px #fff, 0 0 0.6px #fff, 0 0 0.7px #dbbaca, 0 0 0.8px #bd9bac, 0 0 0.9px #e60073, 0 0 1px #e60073;
+        }
     }
-    
 }
 
 /*------------------------------------------------*/
