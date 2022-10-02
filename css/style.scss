@@ -61,11 +61,11 @@ input {
 button span:nth-child(2) {
     position: relative;
     right: 5px;
-    transition: left 0.4s cubic-bezier(0.19, 1, 0.22, 1) ease-in-out;
+    transition: left 0.4s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 input:hover + .menu button span:nth-child(2) {
-    left: -0.001px;
+    left: 0px;
 }
 
 /*------------------------------------------------*/
@@ -135,7 +135,7 @@ ul {
 }
 
 /*------------------------------------------------*/
-/*------------------FOOTER------------------------*/
+/*------------------ARROW-------------------------*/
 /*------------------------------------------------*/
 .astronaut .arrow {
     position: absolute;
@@ -357,7 +357,7 @@ blockquote {
    .story {
       background-image: url(../img/space_rot.jpg);
       background-size: cover;
-      background-position: 100;
+      background-position: 100vw;
     }
 
    .part-1, .part-2 {
@@ -372,11 +372,14 @@ blockquote {
         width: 250px;
         font-family: 'Rubik', sans-serif;
         font-style: italic;
-        font-size: 1.7rem;
-        line-height: 25px;
-        opacity: 0.35;
-        background: #BF22AA;
-        background: linear-gradient(to bottom right, #BF22AA 0%, #E4E6DF 50%, #BF22AA 100%);
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 22px;
+        opacity: 0.3;
+        background: #CF4899;
+        background: -webkit-linear-gradient(to bottom right, #CF4899 25%, #FFFFFF 50%, #CF4899 73%);
+        background: -moz-linear-gradient(to bottom right, #CF4899 25%, #FFFFFF 50%, #CF4899 73%);
+        background: linear-gradient(to bottom right, #CF4899 25%, #FFFFFF 50%, #CF4899 73%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
