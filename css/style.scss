@@ -209,7 +209,7 @@ ul {
         font-size: 0.9rem;
     }
 }
-
+/*--------------lägg ruta runt citat och ""utanför!----*/
 blockquote {
     outline: 3px solid yellow;
     margin: 20px;
@@ -249,7 +249,9 @@ blockquote {
 }
 
 .gradient-quote {
-    outline: 3px solid red;
+    outline: 3px solid green;
+    padding: 0;
+    margin: 0;
 }
 /*------------------------------------------------*/
 /*----------------ARTICLE CLEARFIX----------------*/
@@ -296,7 +298,13 @@ blockquote {
 @media screen and (min-width: 600px) {
     .full-page {
         display: flex;
-        gap: 100px;
+        gap: 200px;
+        .part-1 {
+            padding-left: 80px;
+        }
+        .part-2 {
+            padding-right: 80px;
+        }
     }
 
     ul {
@@ -358,12 +366,19 @@ blockquote {
 
     .gradient-quote {
         display: block;
-        background: #CF273E;
-        background: linear-gradient(to top left, #CF273E 24%, #FFBC63 34%, #FFEE57 46%, #FFBC63 64%, #CF273E 74%);
+        padding-left: 20px;
+        padding-top: 35px;
+        padding-bottom: 30px;
+        width: 250px;
+        font-family: 'Rubik', sans-serif;
+        font-style: italic;
+        font-size: 1.7rem;
+        line-height: 25px;
+        opacity: 0.35;
+        background: #BF22AA;
+        background: linear-gradient(to bottom right, #BF22AA 0%, #E4E6DF 50%, #BF22AA 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 2rem;
-        text-align: center;
     }
 
     .major-tom {
