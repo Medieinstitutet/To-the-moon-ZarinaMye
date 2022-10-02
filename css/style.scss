@@ -61,7 +61,7 @@ input {
 button span:nth-child(2) {
     position: relative;
     right: 5px;
-    transition: left 0.3s ease-in-out;
+    transition: left 0.4s cubic-bezier(0.19, 1, 0.22, 1) ease-in-out;
 }
 
 input:hover + .menu button span:nth-child(2) {
@@ -106,7 +106,7 @@ ul {
 }
 
 /*------------------------------------------------*/
-/*------------------ASIDE-------------------------*/
+/*---------------ASIDE: TO THE MOON---------------*/
 /*------------------------------------------------*/
 .astronaut .heading-box {
     border: 2.5px solid black;
@@ -152,8 +152,8 @@ ul {
 }
 
 /*------------------------------------------------*/
-/*------------------PAGE.2: STORY------------------*/
-/*------------------------------------------------*/
+/*------------------PAGE.2: STORY-----------------*/
+/*---------------------PART 1---------------------*/
 .part-1 {
     outline: 3px solid brown;
 }
@@ -163,6 +163,9 @@ ul {
     background-size: cover;
 }
 
+/*------------------------------------------------*/
+/*----------------H.2 SPACE VENTURES--------------*/
+/*------------------------------------------------*/
 .space-ventures {
     h2 {
         span:first-of-type {
@@ -190,7 +193,9 @@ ul {
         }
     }
 }
-
+/*------------------------------------------------*/
+/*----------------ARTICLE GROUND------------------*/
+/*------------------------------------------------*/
 .ground {
     outline: 3px solid purple;
     color: white;
@@ -236,6 +241,9 @@ blockquote {
     }
 }
 
+/*------------------------------------------------*/
+/*------------------PAGE.2: STORY-----------------*/
+/*---------------------PART 2---------------------*/
 .part-2 {
     outline: 3px solid grey;
 }
@@ -243,7 +251,9 @@ blockquote {
 .gradient-quote {
     outline: 3px solid red;
 }
-
+/*------------------------------------------------*/
+/*----------------ARTICLE CLEARFIX----------------*/
+/*------------------------------------------------*/
 .clearfix {
     outline: 3px solid blue;
     color: white;
@@ -252,6 +262,21 @@ blockquote {
     padding-left: 20px;
     padding-right: 10px;
     line-height: 12px;
+    span:nth-of-type(4) {
+        color: red;
+        border-bottom: 1px solid red;
+    }
+    span:nth-of-type(5) {
+        color: red;
+        font-size: 0.6rem;
+        font-weight: 400
+    }
+    span:nth-of-type(5) {
+        position: relative;
+        left: 0;
+        transition: left 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+        &:hover { left: 10px; }
+    }
 }
 
 /*------------------------------------------------*/
