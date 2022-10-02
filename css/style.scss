@@ -1,4 +1,4 @@
-/*----imp normalize--blir fel?---allt orange?-----*/
+@import "normalize.css";
 
 .clearfix::after {
     content: "";
@@ -11,6 +11,7 @@
 /*------------------------------------------------*/
 .full-page {
     min-height: 100vh;
+    min-width: 100vw;
     outline: 3px solid orange;
 }
 
@@ -57,15 +58,14 @@ input {
     opacity: 0;
 }
 
-input:hover + .menu button span:nth-child(2) {
-    right: -5px;
-}
-/*-------?-inget hover-?-------*/
-
 button span:nth-child(2) {
     position: relative;
-    left: -5px;
+    right: 5px;
     transition: left 0.3s ease-in-out;
+}
+
+input:hover + .menu button span:nth-child(2) {
+    left: -0.001px;
 }
 
 /*------------------------------------------------*/
