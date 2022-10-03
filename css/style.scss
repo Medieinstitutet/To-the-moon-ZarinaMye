@@ -11,8 +11,10 @@
 /*------------------------------------------------*/
 .full-page {
     min-height: 100vh;
+    min-width: 175px;
     outline: 3px solid orange;
 }
+
 
 /*------------------------------------------------*/
 /*-----------------PAGE.1: ASTRONAUT--------------*/
@@ -94,14 +96,21 @@ ul {
     padding: 0;
     list-style: none;
     display: flex;
+    min-height: 90vh;
     flex-direction: column;
     height: 100%;
     justify-content: space-evenly;
     text-align: center;
     text-transform: uppercase;
-    font-size: 1.7rem;
-    font-weight: 700;
-    text-shadow: 0px 1.5px rgba(184, 179, 179, 0.994);
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 2rem;
+        font-weight: 700;
+        text-shadow: 3px 3px 4px rgba(184, 179, 179, 0.9);
+        
+    }
+    
 }
 
 /*------------------------------------------------*/
@@ -141,8 +150,9 @@ ul {
     position: absolute;
     width: 100vw;
     height: 50px;
-    z-index: 5;
+    z-index: 1;
     margin-top: 92vh;
+    
     span {
         position: relative;
         left: 49vw;
@@ -154,7 +164,7 @@ ul {
 /*------------------------------------------------*/
 /*------------------PAGE.2: STORY-----------------*/
 /*---------------------PART 1---------------------*/
-.part-one {
+.part-1 {
     outline: 3px solid brown;
 }
 
@@ -170,7 +180,7 @@ ul {
     h2 {
         span:first-of-type {
             position: relative;
-            display: block;
+            display: inline-block;
             z-index: 1;
             color: white;
             font-family: 'Rubik', sans-serif;
@@ -182,6 +192,7 @@ ul {
 
         span:nth-of-type(2) {
             position: relative;
+            display: block;
             z-index: 0;
             color: white;
             font-family: "Times New Roman", Times, serif;
@@ -205,8 +216,9 @@ ul {
     font-size: 0.45rem;
     line-height: 12px;
     margin-top: -15px;
+    max-width: 370px; /*-*/
     h3 {
-        font-size: 0.9rem;
+        font-size: 0.9rem; /*-*/
     }
 }
 /*--------------lägg ruta runt citat och ""utanför!----*/
@@ -216,6 +228,7 @@ blockquote {
     padding-left: 20px;
     padding-right: 10px;
     position: relative;
+    display:inline-block;
     color: white;
     font-family: 'Rubik', sans-serif;
     font-style: italic;
@@ -226,9 +239,9 @@ blockquote {
         content: "\2033";
         display: block;
         position: absolute;
-        display: inline;
+        display: inline-block;
         font-size: 5rem;
-        opacity: 0.7;
+        opacity: 0.5;
         z-index: 1;
     }
     &::before {
@@ -244,7 +257,7 @@ blockquote {
 /*------------------------------------------------*/
 /*------------------PAGE.2: STORY-----------------*/
 /*---------------------PART 2---------------------*/
-.part-two {
+.part-2 {
     outline: 3px solid grey;
 }
 
@@ -264,17 +277,17 @@ blockquote {
     padding-left: 20px;
     padding-right: 10px;
     line-height: 12px;
-    span:nth-of-type(4) {
+    span:nth-of-type(1){
         color: red;
         border-bottom: 1px solid red;
     }
-    span:nth-of-type(5) {
+    span:nth-of-type(2) {
         color: red;
         font-size: 0.6rem;
         font-weight: 400
     }
 
-    span:nth-of-type(5) {
+    span:nth-of-type(2) {
         position: relative;
         left: 0;
         transition: left 0.4s cubic-bezier(0.65, 0, 0.35, 1);
@@ -283,7 +296,7 @@ blockquote {
 }
 
 /*------------------------------------------------*/
-/*----------------COOKIE--------------------------*/
+/*----------------COOKIES--------------------------*/
 /*------------------------------------------------*/
 footer {
     position: fixed;
@@ -336,16 +349,13 @@ footer {
     display: none;
 }
 
-
-
-
 /*------------------------------------------------*/
 /*-----------------DESKTOPP-----------------------*/
 /*------------------------------------------------*/
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
     .full-page {
         display: flex;
-        gap: 200px;
+        gap: 150px;
 
         .part-one {
             padding-left: 80px;
@@ -356,21 +366,15 @@ footer {
     }
 
     ul {
-        font-size: 2rem;
-        li:hover {
-            text-decoration: 6px underline rgb(209, 0, 161);
-        }
-            
-    /*--------------?---radius o shadow--?----------*/
-    // /----------underline vs boder-bottom---------*/
-        .border-bottom {
-            
-            border-radius: 20px;
-            text-shadow{
-                visibility: hidden;
+        font-size: 3rem; 
+        a {
+            &:hover {
+                text-decoration: underline 6px;
+                text-decoration-color: rgb(209, 0, 161);
+                /*-----border-radius-------*/
             }
-        }
-    }
+        }  
+    } 
             
     .astronaut {
         .heading-box {
@@ -408,7 +412,7 @@ footer {
       background-position: 100vw;
     }
 
-   .part-one, .part-two {
+   .part-1, .part-2 {
          width: 50%;
     }
 
@@ -417,12 +421,12 @@ footer {
         padding-left: 20px;
         padding-top: 35px;
         padding-bottom: 30px;
-        width: 250px;
+        max-width: 280px;
         font-family: 'Rubik', sans-serif;
         font-style: italic;
         font-weight: 300;
-        font-size: 1.6rem;
-        line-height: 22px;
+        font-size: 1.8rem; /* 2rem*/
+        line-height: 25px;
         opacity: 0.4;
         background: #CF4899;
         background: -webkit-linear-gradient(to bottom right, #CF4899 25%, #FFFFFF 50%, #CF4899 73%);
@@ -448,4 +452,3 @@ footer {
         }
     }
 }
-    
