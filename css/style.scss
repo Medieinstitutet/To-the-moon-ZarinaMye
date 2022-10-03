@@ -15,7 +15,6 @@
     outline: 3px solid orange;
 }
 
-
 /*------------------------------------------------*/
 /*-----------------PAGE.1: ASTRONAUT--------------*/
 /*------------------------------------------------*/
@@ -108,9 +107,7 @@ ul {
         font-size: 2rem;
         font-weight: 700;
         text-shadow: 3px 3px 4px rgba(184, 179, 179, 0.9);
-        
     }
-    
 }
 
 /*------------------------------------------------*/
@@ -357,10 +354,10 @@ footer {
         display: flex;
         gap: 150px;
 
-        .part-one {
+        .part-1 {
             padding-left: 80px;
         }
-        .part-two {
+        .part-2 {
             padding-right: 80px;
         }
     }
