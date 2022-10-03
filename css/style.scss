@@ -178,6 +178,7 @@ ul {
 .part-1 {
     outline: 5px solid rgb(42, 165, 110);
     max-width: 380px;
+    position: relative;
 }
 
 .story {
@@ -231,17 +232,15 @@ h2 {
     font-size: 0.45rem;
     line-height: 12px;
     margin-top: -15px;
-    max-width: 380px; /*-*/
+    width: 100%;
+    max-width: 380px; 
     h3 {
-        font-size: 0.9rem; /*-*/
+        font-size: 0.9rem; 
     }
 }
-/*--------------lägg ruta runt citat och ""utanför!----*/
+
 blockquote {
     outline: 3px solid yellow;
-    margin: 20px;
-    padding-left: 20px;
-    padding-right: 10px;
     position: relative;
     display:inline-block;
     color: white;
@@ -256,16 +255,16 @@ blockquote {
         position: absolute;
         display: inline-block;
         font-size: 5rem;
-        opacity: 0.5;
+        opacity: 0.4;
         z-index: 1;
     }
     &::before {
         top: 10px;
-        left: 0.1rem;
+        left: -1rem;
     }
     &::after {
         bottom: -12px;
-        left: 12.5rem;
+        left: 11rem;
     }
 }
 
@@ -275,6 +274,7 @@ blockquote {
 .part-2 {
     outline: 3px solid grey;
     max-width: 380px;
+    position: relative;
 }
 
 .gradient-quote {
@@ -282,12 +282,14 @@ blockquote {
     padding: 0;
     margin: 0;
 }
+
 /*------------------------------------------------*/
-/*----------------ARTICLE CLEARFIX----------------*/
+/*----------------ARTICLE TOM-PIC-----------------*/
 /*------------------------------------------------*/
-.clearfix {
+.tom-pic {
     outline: 3px solid blue;
     position: relative;
+    width: 100%;
     color: white;
     font-family: 'Rubik', sans-serif;
     font-size: 0.45rem;
@@ -311,7 +313,7 @@ blockquote {
 }
 
 /*------------------------------------------------*/
-/*----------------COOKIES--------------------------*/
+/*----------------COOKIES-------------------------*/
 /*------------------------------------------------*/
 footer {
     position: fixed;
@@ -367,22 +369,24 @@ footer {
 /*------------------------------------------------*/
 /*-----------------DESKTOPP-----------------------*/
 /*------------------------------------------------*/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
     .full-page {
         display: flex;
+        /*----behöver få centrerade i edge o firefox--*/
         gap: 100px;
-
+ 
         .part-1 {
             padding-left: 80px;
+            
         }
         .part-2 {
             padding-right: 80px;
         }
     }
-
+ /*-----------PAGE.1 ASTRONAUT-------------*/
     ul {
-        font-size: 3rem; 
         a {
+            font-size: 3rem;
             &:hover {
                 text-decoration: underline 6px;
                 text-decoration-color: rgb(209, 0, 161);
@@ -393,23 +397,26 @@ footer {
             
     .astronaut {
         .heading-box {
-          width: 12rem;
+          width: 16rem;
+          left: 7vw;
+          top: 7vh;
       
           .text {
-            font-size: 3rem;
-            margin-bottom: 30px;
-            margin-top: 25px;
+            font-size: 4.2rem;
+            margin-bottom: 40px;
+            margin-top: 35px;
           }
       
           .link {
             text-align: right;
-            font-size: 0.6rem;
+            font-size: 0.7rem;
+            margin-right: 10px;
             margin-bottom: 5px;
             .arrow {
               position: relative;
               left: 0;
               transition: left 0.4s cubic-bezier(0.65, 0, 0.35, 1);
-              &:hover { left: 10px; }
+              &:hover { left: 15px; }
             }
           }
         }
@@ -421,7 +428,7 @@ footer {
             }
         }          
     }
-   /*------------------PAGE.2 STORY---------------*/ 
+/*------------------PAGE.2 STORY---------------*/ 
    .story {
       background-image: url(../img/space_rot.jpg);
       background-size: cover;
@@ -429,9 +436,9 @@ footer {
     }
 
    .part-1, .part-2 {
-         width: 50%;
+     width: 50%;
     }
-
+/*---------------PART-1------------------------*/
     h2 {
         .space {
             font-size: 3.5rem;
@@ -441,21 +448,22 @@ footer {
         }
         .ventures {
             font-size: 4.5rem;
-            top:-3.5vh;
+            top: -1vh;
         }
     }
 
-    .blockquote {
+    .blockquote { /*---svarar inte---*/
         font-size: 1.5rem;
         color: red;
     }
 
-    .ground { /*--svarar inte--*/
+    .ground { 
         font-size: 0.7rem;
         line-height: 20px;
         margin-top: 1vh;
     }
 
+/*---------------PART-2------------------------*/
     .gradient-quote {
         position: relative;
         display: block;
@@ -477,7 +485,8 @@ footer {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    .clearfix {
+
+    .tom-pic {
         top:7vh;
         font-size: 0.7rem;
         line-height: 20px;
@@ -488,7 +497,6 @@ footer {
             float: right;
             transform: rotate(3deg);
         }
-
     }
     
 
