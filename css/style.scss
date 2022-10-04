@@ -292,11 +292,11 @@ blockquote {
     font-size: 0.45rem;
     line-height: 12px;
     .link {
-        color: red;
-        border-bottom: 1px solid red;
+        color: rgb(209, 0, 161);
+        border-bottom: 1px solid rgb(209, 0, 161);
     }
     .link-arrow {
-        color: red;
+        color: rgb(209, 0, 161);
         font-size: 0.6rem;
         font-weight: 400
     }
@@ -455,33 +455,33 @@ footer {
         .space {
             font-size: 3.5rem;
             font-weight: 700;
-            top: 7vh;
+            top: 8vh;
             left: 0.5px;  
         }
         .ventures {
             font-size: 4.5rem;
-            top: -1vh;
+            top: -0.1vh;
         }
     }
 
     .quote { 
         width: 360px;
         padding: 0;
-        padding-left: 28px;
+        left: 4rem;
         padding-top: 30px;
         margin: 0;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 300;
         line-height: 20px;
         font-style: italic;
         color: white;
         &::before {
             top: 40px;
-            left: 0.5rem;
+            left: -1rem;
         }
         &::after {
             bottom: -15px;
-            left: 21rem;
+            left: 16rem;
         }
     }
 
@@ -497,16 +497,15 @@ footer {
     .gradient-quote {
         position: relative;
         display: block;
-        top: 12vh;
-        padding-left: 20px;
+        top: 14.5vh;
         padding-bottom: 30px;
         max-width: 280px;
         font-family: 'Rubik', sans-serif;
         font-style: italic;
         font-weight: 300;
-        font-size: 1.5rem; 
+        font-size: 1.7rem; 
         line-height: 25px;
-        opacity: 0.4;
+        opacity: 0.5;
         background: #CF4899;
         background: -webkit-linear-gradient(to bottom right, #CF4899 25%, #FFFFFF 50%, #CF4899 73%);
         background: -moz-linear-gradient(to bottom right, #CF4899 25%, #FFFFFF 50%, #CF4899 73%);
@@ -516,7 +515,7 @@ footer {
     }
 
     .clearfix {
-        top:8vh;
+        top:13vh;
         font-size: 0.72rem;
         line-height: 20px;
         width: 380px;
