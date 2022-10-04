@@ -188,8 +188,6 @@ ul {
 /*----------------H.2 SPACE VENTURES--------------*/
 /*------------------------------------------------*/
 h2 {
-    margin: 0;
-    padding: 0;
     position: relative;
     span {
         display: block;
@@ -265,7 +263,6 @@ blockquote {
         bottom: -12px;
         left: 11rem;
     }
-
 }
 
 /*------------------------------------------------*/
@@ -312,7 +309,6 @@ blockquote {
             content: "\A";
             white-space: pre;
         }
-
     }
 }
 
@@ -382,15 +378,16 @@ footer {
 @media screen and (min-width: 800px) {
     .full-page {
         display: flex;
-        /*----behöver få centrerade i edge o firefox--*/
         gap: 130px;
  
         .part-1 {
             padding-left: 80px;
+            margin: 0 auto;
             
         }
         .part-2 {
             padding-right: 80px;
+            margin: 0 auto;
         }
     }
  /*-----------PAGE.1 ASTRONAUT-------------*/
@@ -444,10 +441,9 @@ footer {
     }
 
    .part-1, .part-2 {
-     width: 50%;
-     /*---centrera----i edge o firefox---*/
-     
+     width: 50%;     
     }
+
 /*---------------PART-1------------------------*/
     h2 {
         .space {
