@@ -284,9 +284,9 @@ blockquote {
 }
 
 /*------------------------------------------------*/
-/*----------------ARTICLE TOM-PIC-----------------*/
+/*----------------ARTICLE CLEARFIX----------------*/
 /*------------------------------------------------*/
-.tom-pic {
+.clearfix {
     outline: 3px solid blue;
     position: relative;
     width: 100%;
@@ -294,21 +294,28 @@ blockquote {
     font-family: 'Rubik', sans-serif;
     font-size: 0.45rem;
     line-height: 12px;
-    span:nth-of-type(1){
+    .link {
         color: red;
         border-bottom: 1px solid red;
     }
-    span:nth-of-type(2) {
+    .link-arrow {
         color: red;
         font-size: 0.6rem;
         font-weight: 400
     }
 
-    span:nth-of-type(2) {
+    .link-arrow {
         position: relative;
         left: 0;
         transition: left 0.4s cubic-bezier(0.65, 0, 0.35, 1);
         &:hover { left: 10px; }
+    }
+    .br-mobile {
+        &::before {
+            content: "\A";
+            white-space: pre;
+        }
+
     }
 }
 
@@ -362,6 +369,7 @@ footer {
     display: none;
 }
 
+
 .major-tom {
     display: none;
 }
@@ -373,7 +381,7 @@ footer {
     .full-page {
         display: flex;
         /*----behöver få centrerade i edge o firefox--*/
-        gap: 100px;
+        gap: 130px;
  
         .part-1 {
             padding-left: 80px;
@@ -437,6 +445,8 @@ footer {
 
    .part-1, .part-2 {
      width: 50%;
+     /*---centrera----i edge o firefox---*/
+     
     }
 /*---------------PART-1------------------------*/
     h2 {
@@ -486,7 +496,7 @@ footer {
         -webkit-text-fill-color: transparent;
     }
 
-    .tom-pic {
+    .clearfix {
         top:7vh;
         font-size: 0.7rem;
         line-height: 20px;
@@ -497,9 +507,13 @@ footer {
             float: right;
             transform: rotate(3deg);
         }
+        .br-mobile {
+            &::before {
+                content: none;
+            }
+        }
     }
     
-
     footer {
         span:nth-of-type(1) {
             left: 20px;
