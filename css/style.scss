@@ -12,7 +12,6 @@
 .full-page {
     min-height: 100vh;
     min-width: 175px;
-    outline: 3px solid orange;
 }
 
 /*------------------------------------------------*/
@@ -176,7 +175,6 @@ ul {
 /*------------------PAGE.2: STORY-----------------*/
 /*---------------------PART 1---------------------*/
 .part-1 {
-    outline: 5px solid rgb(42, 165, 110);
     max-width: 380px;
     position: relative;
 }
@@ -192,7 +190,6 @@ ul {
 h2 {
     margin: 0;
     padding: 0;
-    outline: solid 1px red;
     position: relative;
     span {
         display: block;
@@ -226,12 +223,11 @@ h2 {
 /*----------------ARTICLE GROUND------------------*/
 /*------------------------------------------------*/
 .ground {
-    outline: 3px solid purple;
     color: white;
     font-family: 'Rubik', sans-serif;
     font-size: 0.45rem;
     line-height: 12px;
-    margin-top: -15px;
+    margin-top: -30px;
     width: 100%;
     max-width: 380px; 
     h3 {
@@ -240,13 +236,16 @@ h2 {
 }
 
 blockquote {
-    outline: 3px solid yellow;
     position: relative;
-    display:inline-block;
+    padding: 0;
+    padding-top: 5px;
+    padding-left: 35px;
+    padding-bottom: 5px;
+    margin: 0;
     color: white;
     font-family: 'Rubik', sans-serif;
     font-style: italic;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     line-height: 15px;
     z-index: 2;
     &::before, &::after {
@@ -259,26 +258,25 @@ blockquote {
         z-index: 1;
     }
     &::before {
-        top: 10px;
-        left: -1rem;
+        top: 25px;
+        left: 0.5rem;
     }
     &::after {
         bottom: -12px;
         left: 11rem;
     }
+
 }
 
 /*------------------------------------------------*/
 /*------------------PAGE.2: STORY-----------------*/
 /*---------------------PART 2---------------------*/
 .part-2 {
-    outline: 3px solid grey;
     max-width: 380px;
     position: relative;
 }
 
 .gradient-quote {
-    outline: 3px solid green;
     padding: 0;
     margin: 0;
 }
@@ -287,7 +285,6 @@ blockquote {
 /*----------------ARTICLE CLEARFIX----------------*/
 /*------------------------------------------------*/
 .clearfix {
-    outline: 3px solid blue;
     position: relative;
     width: 100%;
     color: white;
@@ -462,22 +459,39 @@ footer {
         }
     }
 
-    .blockquote { /*---svarar inte---*/
-        font-size: 1.5rem;
-        color: red;
+    .quote { 
+        width: 360px;
+        padding: 0;
+        padding-left: 28px;
+        padding-top: 30px;
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: 20px;
+        font-style: italic;
+        color: white;
+        &::before {
+            top: 40px;
+            left: 0.5rem;
+        }
+        &::after {
+            bottom: -15px;
+            left: 21rem;
+        }
     }
 
     .ground { 
         font-size: 0.7rem;
         line-height: 20px;
         margin-top: 1vh;
+        padding-top: 30px;
+        width: 380px;
     }
 
 /*---------------PART-2------------------------*/
     .gradient-quote {
         position: relative;
         display: block;
-        outline: solid 1px red;
         top: 11vh;
         padding-left: 20px;
         padding-bottom: 30px;
