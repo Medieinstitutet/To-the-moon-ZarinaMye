@@ -498,13 +498,15 @@ footer {
 
     .clearfix {
         top:7vh;
-        font-size: 0.7rem;
+        font-size: 0.72rem;
         line-height: 20px;
+        width: 380px;
         .major-tom {
             display: block;
             width: 100px;
             height: auto;
-            float: right;
+            float:right;
+            right: 10px;
             transform: rotate(3deg);
         }
         .br-mobile {
