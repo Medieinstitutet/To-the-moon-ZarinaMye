@@ -105,7 +105,7 @@ ul {
         color: black;
         font-size: 1.8rem;
         font-weight: 700;
-        text-shadow: 3px 3px 4px rgba(184, 179, 179, 0.9);
+        text-shadow: 0.2px 2px rgb(184, 179, 179, 0.796);
     }
 }
 
@@ -395,10 +395,10 @@ footer {
     ul {
         a {
             font-size: 3rem;
+            text-shadow: 0.5px 3px rgb(184, 179, 179, 0.796);
             &:hover {
-                text-decoration: underline 6px;
-                text-decoration-color: rgb(209, 0, 161);
-                /*-----border-radius-------*/
+                border-bottom: solid 6px rgb(209, 0, 161);
+                border-radius: 2px;              
             }
         }  
     } 
