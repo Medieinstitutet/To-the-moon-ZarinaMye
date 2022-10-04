@@ -90,8 +90,6 @@ input:checked + .menu nav {
 }
 
 ul {
-    margin: 0;
-    padding: 0;
     list-style: none;
     display: flex;
     max-height: 95vh;
@@ -189,6 +187,8 @@ ul {
 /*------------------------------------------------*/
 h2 {
     position: relative;
+    margin: 0;
+    padding: 0;
     span {
         display: block;
     }
