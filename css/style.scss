@@ -198,6 +198,9 @@ h2 {
         position: relative;
         z-index: 1;
         color: white;
+        width: 100px;
+        margin: 0;
+        padding: 0;
         font-family: 'Rubik', sans-serif;
         font-size: clamp(1rem, 14.6vw, 3.1rem);
         font-weight: 700;
@@ -208,11 +211,14 @@ h2 {
 
     .ventures {
         position: relative;
+        width: 150px;
+        margin: 0;
+        padding: 0;
         z-index: 0;
         color: white;
         font-family: "Times New Roman", Times, serif;
         font-weight: bold;
-        top: -5.8vh;
+        top: -6vh;
         left: 50px;
         opacity: 0.6;
         font-size: clamp(1rem, 19vw, 4rem);
@@ -223,12 +229,14 @@ h2 {
 /*----------------ARTICLE GROUND------------------*/
 /*------------------------------------------------*/
 .ground {
-    color: white;
+    color:white;
+    position: relative;
     font-family: 'Rubik', sans-serif;
     font-size: 0.45rem;
     line-height: 12px;
+    padding-left: 10px;
+    padding-right: 5px;
     margin-top: -30px;
-    width: 100%;
     max-width: 380px; 
     h3 {
         font-size: 0.9rem; 
@@ -285,7 +293,8 @@ blockquote {
 /*------------------------------------------------*/
 .clearfix {
     position: relative;
-    width: 100%;
+    padding-left: 10px;
+    padding-right: 5px;
     color: white;
     font-family: 'Rubik', sans-serif;
     font-size: 0.45rem;
