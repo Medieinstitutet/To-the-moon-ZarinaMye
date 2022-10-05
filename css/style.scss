@@ -107,6 +107,7 @@ ul {
         font-weight: 700;
         text-shadow: 0.2px 2px rgb(184, 179, 179, 0.796);
     }
+
 }
 
 /*------------------------------------------------*/
@@ -155,7 +156,6 @@ ul {
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-iteration-count:infinite;
- 
     span {
         font-family:'Fira Code', monospace;
         font-weight: 400;
@@ -228,6 +228,7 @@ h2 {
     font-size: 0.45rem;
     line-height: 12px;
     margin-top: -30px;
+    padding-left: 15px;
     width: 100%;
     max-width: 380px; 
     h3 {
@@ -239,7 +240,7 @@ blockquote {
     position: relative;
     padding: 0;
     padding-top: 5px;
-    padding-left: 35px;
+    padding-left: 40px;
     padding-bottom: 5px;
     margin: 0;
     color: white;
@@ -286,6 +287,7 @@ blockquote {
 .clearfix {
     position: relative;
     width: 100%;
+    padding-left: 15px;
     color: white;
     font-family: 'Rubik', sans-serif;
     font-size: 0.45rem;
@@ -360,14 +362,9 @@ footer {
 /*------------------------------------------------*/
 /*----------------MOBILE--------------------------*/
 /*------------------------------------------------*/
-.full-page {
-    
-}
-
 .gradient-quote {
     display: none;
 }
-
 
 .major-tom {
     display: none;
@@ -398,7 +395,7 @@ footer {
             text-shadow: 0.5px 3px rgb(184, 179, 179, 0.796);
             &:hover {
                 border-bottom: solid 6px rgb(209, 0, 161);
-                border-radius: 2px;              
+                border-radius: 1px;  
             }
         }  
     } 
@@ -434,7 +431,7 @@ footer {
             }
         }
     }
-/*------------------PAGE.2 STORY---------------*/ 
+ /*------------------PAGE.2 STORY---------------*/ 
    .story {
       background-image: url(../img/space_rot.jpg);
       background-size: cover;
@@ -445,7 +442,7 @@ footer {
      width: 50%;     
     }
 
-/*---------------PART-1------------------------*/
+ /*---------------PART-1------------------------*/
     h2 {
         .space {
             font-size: 3.5rem;
@@ -488,30 +485,28 @@ footer {
         width: 380px;
     }
 
-/*---------------PART-2------------------------*/
+ /*---------------PART-2------------------------*/
     .gradient-quote {
         position: relative;
         display: block;
-        top: 14.5vh;
+        top: 13.2vh;
         padding-bottom: 30px;
         max-width: 280px;
         font-family: 'Rubik', sans-serif;
         font-style: italic;
         font-weight: 300;
         font-size: 1.7rem; 
-        line-height: 25px;
-        opacity: 0.5;
+        line-height: 28px;
+        opacity: 0.3;
         z-index: 1;
-        background: #CF4899;
-        background: -webkit-linear-gradient(to bottom right, #CF4899 25%, #FFFFFF 50%, #CF4899 73%);
-        background: -moz-linear-gradient(to bottom right, #CF4899 25%, #FFFFFF 50%, #CF4899 73%);
-        background: linear-gradient(to bottom right, #CF4899 25%, #FFFFFF 50%, #CF4899 73%);
+        background: #D100A1;
+        background: linear-gradient(172deg, #D100A1 1%, #FFFFFF 50%, #D100A1 78%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
     .clearfix {
-        top:13vh;
+        top:11.8vh;
         font-size: 0.72rem;
         line-height: 20px;
         width: 380px;
