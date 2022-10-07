@@ -107,7 +107,6 @@ ul {
         font-weight: 700;
         text-shadow: 0.2px 2px rgb(184, 179, 179, 0.796);
     }
-
 }
 
 /*------------------------------------------------*/
@@ -217,7 +216,7 @@ h2 {
         color: white;
         font-family: "Times New Roman", Times, serif;
         font-weight: bold;
-        top: -6vh;
+        top: -5vh;
         left: 55px;
         opacity: 0.6;
         font-size: clamp(1rem, 19vw, 4rem);
@@ -379,7 +378,7 @@ footer {
 /*------------------------------------------------*/
 /*-----------------DESKTOPP-----------------------*/
 /*------------------------------------------------*/
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
     .full-page {
         display: flex;
         gap: 130px;
